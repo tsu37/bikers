@@ -1,0 +1,31 @@
+<header class="navbar navbar-fixed-top navbar-inverse" style = background-color:#FE9A2E >
+  <div class="container">
+    <%= link_to "Bikers.com", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "ホーム", root_path ,id:"menu" %></li>
+        <% if logged_in? %>
+          <li><%= link_to "ツーリングマップ", help_path ,id:"menu" %></li>
+          <li><%= link_to "ユーザー", users_path ,id:"menu" %></li>
+          <li><%= link_to "リンク", contact_path ,id:"menu" %></li>
+          <%= Time.zone.now %>          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" style = background-color:#FE9A2E id="menu">
+              アカウント <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" style = background-color:#FE9A2E >
+              <li><%= link_to "プロフィール", current_user %></li>
+              <li><%= link_to "プロフィール編集", edit_user_path(current_user) %></li>
+              <li class="divider"></li>
+              <li>
+                <%= link_to "ログアウト", logout_path, method: :delete %>
+              </li>
+            </ul>
+          </li>
+        <% else %>
+          <li><%= link_to "ログイン", login_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>
