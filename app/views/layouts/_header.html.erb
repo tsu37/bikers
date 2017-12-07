@@ -1,11 +1,11 @@
 <header class="navbar navbar-fixed-top navbar-inverse" style = background-color:#FE9A2E >
   <div class="container">
-    <%= link_to "Bikers.com", root_path, id: "logo" %>
+    <%= link_to "bikers.com", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "ホーム", root_path ,id:"menu" %></li>
         <% if logged_in? %>
-          <li><%= link_to "ツーリングマップ", help_path ,id:"menu" %></li>
+          <li><%= link_to "おすすめツーリングスポット", help_path ,id:"menu" %></li>
           <li><%= link_to "ユーザー", users_path ,id:"menu" %></li>
           <li><%= link_to "リンク", contact_path ,id:"menu" %></li>
           <%= Time.zone.now %>          
@@ -23,7 +23,7 @@
             </ul>
           </li>
         <% else %>
-          <li><%= link_to "ログイン", login_path %></li>
+          <li><%= link_to "ログイン", login_path ,id:"menu" %></li>
         <% end %>
       </ul>
     </nav>

@@ -1,40 +1,89 @@
 <% provide(:title, 'リンク') %>
 <h1>リンク</h1>
-<p>
+<div style="background:url(<%= asset_path "motogp_start.png" %>)">
+    
   <h2>国内４大メーカー！</h2>
   <center>
-  <a href="http://www.honda.co.jp/motor/" target="_blank">世界のHonda!!</a><br>
-  <a href="https://www.yamaha-motor.co.jp/" target="_blank">デザインのYAMAHA!!</a><br>
-  <a href="http://www1.suzuki.co.jp/motor/" target="_blank">変態のSUZUKI!!</a><br>
-  <a href="https://www.kawasaki-cp.khi.co.jp/" target="_blank">漢、KAWASAKI!!</a>
+    <%= link_to image_tag("honda.jpg", alt: "世界のHonda!!"),
+              'http://www.honda.co.jp/motor/', :target=>["_blank"] %>    
+              
+    <%= link_to image_tag("yamaha.png", alt: "デザインのYAMAHA!!"),
+              'https://www.yamaha-motor.co.jp/', :target=>["_blank"] %>         
+              
+    <%= link_to image_tag("suzuki.png", alt: "変態のSUZUKI!!"),
+              'http://www1.suzuki.co.jp/motor/', :target=>["_blank"] %>     
+              
+    <%= link_to image_tag("kawasaki.png", alt: "漢、KAWASAKI!!"),
+              'https://www.kawasaki-cp.khi.co.jp/', :target=>["_blank"] %>     
+
   
   <h2>個性派ぞろい海外メーカー！</h2>
-  <a href="www.ducati.co.jp/" target="_blank">Ducati</a><br>  
-  <a href="http://www.harley-davidson.com/content/h-d/ja_JP/home.html" target="_blank">Harley Davidson</a><br>
-  <a href="www.ktm.com/jp/" target="_blank">KTM</a><br>
-  <a href="www.bmw-motorrad.jp/" target="_blank">BMW</a><br>  
-  <a href="aprilia-japan.com/" target="_blank">aprilia</a><br>  
-  <a href="www.piaggio.co.jp/" target="_blank">Piaggio</a><br>  
-  <a href="motoguzzi-japan.com/" target="_blank">motoguzzi</a><br>  
-  <a href="vespa-japan.com/" target="_blank">vespa</a><br>  
-  <a href="www.mv-agusta.jp/" target="_blank">MV Agusta</a><br>  
-  <a href="www.triumphmotorcycles.jp/" target="_blank">TRIUMPH</a><br>  
-  <a href="www.husqvarna-motorcycles.com/jp/" target="_blank">Hasqvarna</a>
+      <%= link_to image_tag("ducati.png", alt: "Ducati"),
+              'http://www.ducati.co.jp/index.do', :target=>["_blank"] %>  
+              
+      <%= link_to image_tag("harley_logo.jpg", alt: "Harley Davidson"),
+              'http://www.harley-davidson.com/content/h-d/ja_JP/home.html', :target=>["_blank"] %>  
+              
+      <%= link_to image_tag("s_ktm_logo.png", alt: "KTM"),
+              'http://www.ktm.com/jp/', :target=>["_blank"] %> 
+              
+      <%= link_to image_tag("bmw_logo.jpeg", alt: "BMW"),
+              'http://www.bmw-motorrad.jp/jp/ja/index.html', :target=>["_blank"] %>
+              
+      <%= link_to image_tag("aprilia.png", alt: "aprilia"),
+              'http://aprilia-japan.com/', :target=>["_blank"] %>   
+ 
+      <%= link_to image_tag("piaggio_logo.jpg", alt: "Piaggio"),
+              'http://www.piaggio.co.jp/piaggio/', :target=>["_blank"] %>   
+
+      <%= link_to image_tag("motoguzzi.png", alt: "motoguzzi"),
+              'http://motoguzzi-japan.com/', :target=>["_blank"] %>  
+
+      <%= link_to image_tag("vespa.png", alt: "vespa"),
+              'http://vespa-japan.com/', :target=>["_blank"] %>   
+
+      <%= link_to image_tag("agusta.png", alt: "MV Agusta"),
+              'http://www.mv-agusta.jp/', :target=>["_blank"] %>   
+ 
+      <%= link_to image_tag("triumph.png", alt: "TRIUMPH"),
+              'http://www.triumphmotorcycles.jp/', :target=>["_blank"] %>    
+ 
+      <%= link_to image_tag("husq.png", alt: "Hasqvarna"),
+              'http://www.husqvarna-motorcycles.com/jp/', :target=>["_blank"] %>    
+
   
     <h2>バイク探し</h2>
-  <a href="www.goobike.com/index.html" target="_blank">GooBike</a><br>  
-  <a href="www.bikebros.co.jp/" target="_blank">BikeBros.</a>
+      <%= link_to image_tag("goobike.png", alt: "GooBike"),
+              'http://www.goobike.com/index.html', :target=>["_blank"] %>    
+
+      <%= link_to image_tag("bikebros.png", alt: "BikeBros."),
+              'http://www.bikebros.co.jp/', :target=>["_blank"] %>    
   
     <h2>パーツ探し</h2>  
-  <a href="https://driverstand.com/tenpo/top/index2.html" target="_blank">２りんかん</a><br>  
-  <a href="https://www.naps-jp.com/" target="_blank">NAP'S</a>
+      <%= link_to image_tag("2rinkan_logo.png", alt: "２りんかん"),
+              'https://driverstand.com/tenpo/top/index2.html', :target=>["_blank"] %>    
+ 
+       <%= link_to image_tag("naps_logo.gif", alt: "NAP'S"),
+              'https://www.naps-jp.com/', :target=>["_blank"] %>    
   
-    <h2>サーキット</h2>    
-  <a href="www.suzukacircuit.jp/" target="_blank">鈴鹿サーキット</a><br>  
-  <a href="www.twinring.jp/" target="_blank">ツインリンクもてぎ</a><br>  
-  <a href="https://www.jasc.or.jp/" target="_blank">筑波サーキット</a><br>  
-  <a href="www.klk.co.jp/" target="_blank">本庄サーキット</a><br>  
-  <a href="www.sodegaura-forest-raceway.com/" target="_blank">袖ヶ浦フォレストレースウェイ</a>
+    <h2>サーキット</h2>
+           <%= link_to image_tag("suzuka.png", alt: "鈴鹿サーキット"),
+              'http://www.suzukacircuit.jp/', :target=>["_blank"] %>    
 
+           <%= link_to image_tag("motegi.png", alt: "ツインリンクもてぎ"),
+              'http://www.twinring.jp/', :target=>["_blank"] %>    
+ 
+           <%= link_to image_tag("tsukuba.png", alt: "筑波サーキット"),
+              'https://www.jasc.or.jp/', :target=>["_blank"] %>    
+              
+    <h2>レース情報</h2>
+           <%= link_to image_tag("motogp.png", alt: "motogp"),
+              'http://www.motogp.com/ja', :target=>["_blank"] %>    
+              
+           <%= link_to image_tag("sbk.png", alt: "SBK"),
+              'http://www.worldsbk.com/', :target=>["_blank"] %>    
+              
+           <%= link_to image_tag("mfj.png", alt: "JSB"),
+              'http://www.superbike.jp/', :target=>["_blank"] %>  
+</div>
 </center>
-</p>
