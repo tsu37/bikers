@@ -41,3 +41,13 @@ ja:
         one:   "1年以上"
         other: "%{count}年以上"
         ago: "前"
+        
+  activerecord:
+   attributes:
+       micropost:
+         content: "投稿内容"
+       user:
+         name: "名前"
+         email: "メールアドレス"
+         password: "パスワード"
+         password_confirmation: "パスワード確認"
